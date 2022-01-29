@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  opcomp:
+    image: opcomp-spotify:latest
+    ports:
+      - 5003:5003
+    volumes:
+      - /home/opcomp_db/:/db
