@@ -5,7 +5,7 @@ import os
 
 app = Quart(__name__)
 
-@app.route('/', methods=["GET"])
+@app.route('/sp', methods=["GET"])
 async def hello():
     query = request.args.get("query")
     songs, playlists = await scraper.main(query=query)
