@@ -12,5 +12,5 @@ async def hello():
     return jsonify({"songs": songs, "playlists": playlists})
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 5003))
     asyncio.run(app.run_task(host='0.0.0.0', port=port))
